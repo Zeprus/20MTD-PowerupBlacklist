@@ -4,7 +4,6 @@ A [BepInEx](https://github.com/BepInEx/BepInEx/releases) plugin for changing the
 
 ## Features
 - Allows blacklisting Powerups or Powerup-Groups to prevent them from showing up.
-<br>![](https://github.com/Zeprus/20MTD-PowerupBlacklist/blob/master/icon.png)
 
 ## Changelog
 - v.1.0.:   Release
