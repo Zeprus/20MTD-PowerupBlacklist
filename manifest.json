@@ -1,0 +1,7 @@
+{
+    "name": "PowerupBlacklist",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/Zeprus/20MTD-PowerupBlacklist",
+    "description": "Allows for blacklisting Powerups to prevent them from appearing.",
+    "dependencies": ["BepInExPackMTD-BepInExPack_20MTD-1.0.0"]
+}
