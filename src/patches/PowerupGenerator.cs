@@ -13,6 +13,7 @@ namespace PowerupBlacklist
         [HarmonyPostfix]
         static void SetCharacterPowerupPoolPostfix(ref List<PowerupPoolItem> ___powerupPool, ref List<PowerupPoolItem> ___devilPool, ref List<PowerupPoolItem> ___characterPool, PowerupPoolProfile characterExclusiveProfile)
         {
+            List<string> blacklist = ConfigBlacklist.Value.Split(',').ToList();
             List<PowerupPoolItem> powerupPoolCopy = new List<PowerupPoolItem>(___powerupPool);
             List<PowerupPoolItem> devilPoolCopy = new List<PowerupPoolItem>(___devilPool);
             List<PowerupPoolItem> characterPoolCopy = new List<PowerupPoolItem>(___characterPool);

@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>PowerupBlacklist</AssemblyName>
     <Description>Allows blacklisting powerups to prevent them from showing up.</Description>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -34,9 +34,20 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>$(GameLibDir)/UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameLibDir)/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextMeshPro">
       <HintPath>$(GameLibDir)/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <!-- Embedd Resource -->
+  <ItemGroup>
+    <Content Remove="res\blacklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\blacklist.png" />
   </ItemGroup>
 
   <!--Automatic deploy-->
